@@ -9,8 +9,11 @@ const panelSlice = createSlice({
     handelPanelOpen: (state) => {
       state.items = !state.items;
     },
+    closeVideo: (state, action) => {
+      state.items = false;
+    },
   },
 });
 
-export const { handelPanelOpen } = panelSlice.actions;
+export const { handelPanelOpen, closeVideo } = panelSlice.actions;
 export default panelSlice.reducer;
