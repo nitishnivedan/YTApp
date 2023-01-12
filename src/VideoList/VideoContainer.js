@@ -1,9 +1,13 @@
 import Videos from "./Videos";
 import Comment from "./Comments";
+import LiveChatComponent from "../LiveChatComponent";
 
 const Video = ({}) => (
   <div>
-    <Videos />
+    <div className="flex w-[1000px]">
+      <Videos />
+      <LiveChatComponent />
+    </div>
     <Comment />
   </div>
 );
